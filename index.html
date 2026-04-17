@@ -5,13 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 
 <body>
+    <nav>
+        <div class="fixed-menu">
+            <h1 class="logo">DK</h1>
+            <div class="nav-links">
+                <a class="nav-link active" href="#menu">Главная</a>
+                <a class="nav-link" href="#about">Обо мне</a>
+                <a class="nav-link" href="#skills">Навыки</a>
+                <a class="nav-link" href="#works">Работы</a>
+                <a class="nav-link" href="#comments">Отзывы</a>
+            </div>
+        </div>
+    </nav>
+
     <section id="main">
         <div class="main-block">
             <img src="img/img/maskot.png" width="125">
@@ -72,9 +86,13 @@
     <section id="works">
          <h1 class="title">РАБОТЫ</h1>
         <div class="works-block">
-            <img src="img/img/work1.png" >
-            <img src="img/img/work2.png">
-            <img src="img/img/work3.png">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/img/work1.png"></div>
+                    <div class="swiper-slide"><img src="img/img/work2.png"></div>
+                    <div class="swiper-slide"><img src="img/img/work3.png"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -118,11 +136,22 @@
             <a href="#"> <img src="img/img/facebook.svg"> </a>
             <a href="#"> <img src="img/img/instagram.svg"> </a>
             <a href="#"> <img src="img/img/telegram.svg"> </a>
-            <a href="#"> <img src="img/img/discord.svg"> </a>
         </div>
     </footer>
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
