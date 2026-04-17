@@ -8,6 +8,7 @@
     background-image: url(img/img/bgMAIN.png)
 }
 .main-block{
+    display: flex;
     flex-direction: column;
     height: 100vh;
 }
@@ -190,13 +191,14 @@
 }
 
 .comments-block{
+    display: flex;
     justify-content: space-evenly;
     max-width: 1150px;
     margin: auto;
 }
 
 .comment-card{
-    background-image: url(img/card.png);
+    background-image: url(img/img/card.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
