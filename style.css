@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-.active{
+.active .nav-link:hover{
     background-color: #BBFF2C;
 }
 
@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    transition-duration: 0.3s;
 }
 
 
@@ -52,17 +53,16 @@
 }
 .main-block{
     display: flex;
-    flex-direction: column;
     height: 100vh;
 }
 .main-content{
-    z-index: 2;
     background-image: url(img/img/form1.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 849px;
     height: 223px;
     padding-left: 30px;
+    z-index: 2;
 }
 .main-title{
     padding-top: 67px;
@@ -112,12 +112,12 @@
 .about-content{
     width: 35%;
     height: 270px;
+    border-radius: 0px 0px 0px 20px;
     background: #792AFF;
     padding-top: 40px;
     padding-left: 40px;
     position: relative;
     display: flex;
-    flex-direction: row;
 }
 .about-title{
     color: #FFF;
@@ -246,7 +246,6 @@
     background-image: url(img/img/bgCOMMENTS.png);
 }
 .comments-block{
-    display: flex;
     justify-content: space-evenly;
     max-width: 1150px;
     margin: auto;
@@ -291,7 +290,6 @@
 
 
 .fixed-menu{
-    background-color: #200153;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -339,14 +337,15 @@ section{
     align-items: center;
     box-shadow: 5px 5px 0 #000000;
     margin-top: 20px;
-}
-.button a {
-    font-size: 20px;
-    text-decoration: none;
-}
-.button{
     transition-duration: 0.3s;
 }
+.button a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .button:hover{
     background: #a0d826;
 }
