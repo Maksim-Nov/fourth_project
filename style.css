@@ -65,6 +65,11 @@ nav{
 .active, .nav-link:hover{
     background-color: #BBFF2C;
 }
+.active{
+    background-color: #BBFF2C;
+    transform: scale(1.2, 1.2);
+}
+
 
 
 
