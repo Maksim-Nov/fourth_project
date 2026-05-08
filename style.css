@@ -106,8 +106,6 @@ nav{
 
 
 
-
-
 #main{
     background-image: url(img/img/bgMAIN.png);
 }
@@ -435,7 +433,6 @@ footer{
         font-size: 18px;
     }
 
-    /* Блок Skills */
     .skills-card {
         margin: 20px;
         padding-left: 10px;
