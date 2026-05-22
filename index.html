@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личная страница разработчика</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
     <nav>
@@ -66,7 +67,7 @@
                     </div>
                 </div>
                 <div class="about-card">
-                    <img src="img/photo.png">
+                    <img src="img/my_photo.png">
                     <p>Где живу: Россия</p>
                     <p>Возраст: 17</p>
                     <p>Дата рождения: 2009</p>
@@ -98,9 +99,16 @@
     <section id="works">
         <h1 class="title">РАБОТЫ</h1>
         <div class="works-block">
-            <img src="img/work1.png" >
-            <img src="img/work2.png">
-            <img src="img/work3.png">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/my_work1.png"></div>
+                    <div class="swiper-slide"><img src="img/my_work2.png"></div>
+                    <div class="swiper-slide"><img src="img/my_work3.png"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </section>
 
@@ -149,5 +157,20 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
 </body>
 </html>
